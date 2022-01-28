@@ -1,0 +1,21 @@
+td {
+    border: 1px solid black;
+    width: 30vh;
+    height: 30vh;
+  }
+  .table{
+    padding-left: 4vw;
+}
+.inline{
+  display: inline;
+}
+.left{
+  position:absolute;
+  left:200px;
+}
+.right{
+  width: 85px;
+}
+.quitbutton{
+  padding-top: 10px;
+}

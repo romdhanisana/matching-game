@@ -1,0 +1,19 @@
+<div class="header right">
+    <h1 mat-dialog-title><span newrestTranslate>You WIN !</span></h1>
+</div>
+<div>
+    <h2>{{winTime}}</h2>
+    <h2>{{winFlips}}</h2>
+</div>
+<div mat-dialog-actions align="end">
+    <div class="mat-elevation-z2 btn-container">
+        <button mat-button (click)="onNoClick()">Quit
+            <mat-icon>cancel</mat-icon>
+        </button>
+    </div>
+    <div class="mat-elevation-z2 btn-container">
+        <button (click)="onYesClick()" mat-button [disabled]="data == undefined">Reload
+            <mat-icon>check</mat-icon>
+        </button>
+    </div>
+</div>

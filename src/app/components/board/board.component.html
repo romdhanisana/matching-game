@@ -1,0 +1,40 @@
+
+<div class="inline right">
+    Time : {{display}}
+</div>
+<div class="inline left">
+    Flips : {{flips}}
+</div>
+<div class="centered">
+<table class="table">
+    <tr>
+        <td (click)="cardClicked(0)">
+            <app-card [shapeType]="content[0].id" [canFlip]="content[0].canFlip" [hide]="content[0].hide"></app-card>
+        </td>
+
+        <td (click)="cardClicked(1)">
+            <app-card [shapeType]="content[1].id" [canFlip]="content[1].canFlip" [hide]="content[1].hide"></app-card>
+        </td >
+
+        <td (click)="cardClicked(2)">
+            <app-card [shapeType]="content[2].id" [canFlip]="content[2].canFlip" [hide]="content[2].hide"></app-card>
+        </td>
+    </tr>
+    <tr>
+        <td (click)="cardClicked(3)">
+            <app-card [shapeType]="content[3].id" [canFlip]="content[3].canFlip" [hide]="content[3].hide"></app-card>
+        </td>
+
+        <td (click)="cardClicked(4)">
+            <app-card [shapeType]="content[4].id" [canFlip]="content[4].canFlip" [hide]="content[4].hide"></app-card>
+        </td>
+
+        <td (click)="cardClicked(5)">
+            <app-card [shapeType]="content[5].id" [canFlip]="content[5].canFlip" [hide]="content[5].hide"></app-card>
+        </td>
+    </tr>
+</table>
+</div>
+<div class="quitbutton">
+    <button mat-raised-button (click)="quitGame()">Quit Game</button>
+</div>
